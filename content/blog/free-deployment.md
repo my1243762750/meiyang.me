@@ -13,6 +13,8 @@ date: "2026-06-08"
 
 ## 1. Vercel
 
+**推荐指数：⭐⭐⭐⭐⭐**
+
 **官网**：https://vercel.com
 
 目前最流行的前端部署平台，Next.js 就是他们家的。
@@ -38,6 +40,8 @@ date: "2026-06-08"
 
 ## 2. Netlify
 
+**推荐指数：⭐⭐⭐⭐⭐**
+
 **官网**：https://netlify.com
 
 JAMstack 先驱，功能跟 Vercel 很接近。
@@ -61,6 +65,8 @@ JAMstack 先驱，功能跟 Vercel 很接近。
 ---
 
 ## 3. Cloudflare Pages
+
+**推荐指数：⭐⭐⭐⭐⭐**
 
 **官网**：https://pages.cloudflare.com
 
@@ -86,6 +92,8 @@ JAMstack 先驱，功能跟 Vercel 很接近。
 
 ## 4. GitHub Pages
 
+**推荐指数：⭐⭐⭐⭐**
+
 **官网**：https://pages.github.com
 
 GitHub 官方服务，如果你已经有 GitHub 账号，零额外注册。
@@ -110,6 +118,8 @@ GitHub 官方服务，如果你已经有 GitHub 账号，零额外注册。
 
 ## 5. Surge
 
+**推荐指数：⭐⭐⭐**
+
 **官网**：https://surge.sh
 
 命令行一键部署，最简单粗暴。
@@ -130,6 +140,8 @@ surge ./dist my-project.surge.sh
 ---
 
 ## 6. Render
+
+**推荐指数：⭐⭐⭐⭐**
 
 **官网**：https://render.com
 
@@ -153,6 +165,8 @@ surge ./dist my-project.surge.sh
 ---
 
 ## 7. Railway
+
+**推荐指数：⭐⭐⭐⭐**
 
 **官网**：https://railway.com
 
