@@ -1,11 +1,14 @@
 /**
  * 从 mei-ui-system tokens 生成 CSS 自定义属性
- * 读取 tokens/*.json → 输出 src/app/tokens.css
+ * 读取 meiyang.me/mei-ui-system/tokens/*.json → 输出 src/app/tokens.css
+ *
+ * mei-ui-system 是项目根目录的符号链接，指向 react-chat/mei-ui-system/
+ * 创建方式: ln -s ../react-chat/mei-ui-system mei-ui-system
  */
 const fs = require("fs")
 const path = require("path")
 
-const tokensDir = path.join(__dirname, "..", "tokens")
+const tokensDir = path.join(__dirname, "..", "mei-ui-system", "tokens")
 const outputFile = path.join(__dirname, "..", "src", "app", "tokens.css")
 
 function readJSON(name) {
@@ -52,7 +55,7 @@ const colorEntries = {
   "page": "#FFFFFF",
   "elevated": "#FFFFFF",
   "text-primary": color.neutral.scale["900"],
-  "text-secondary": color.neutral.scale["700"],
+  "text-secondary": color.neutral.scale["600"],
   "text-tertiary": color.neutral.scale["400"],
   "border-default": color.neutral.scale["200"],
   "border-strong": color.neutral.scale["300"],
