@@ -15,9 +15,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN" className="h-full">
-      <body className="flex min-h-full flex-col bg-white font-sans antialiased dark:bg-zinc-950">
+      <body className="flex min-h-full flex-col bg-[var(--color-page)] font-sans antialiased">
         <Header />
-        <main className="mx-auto w-full max-w-4xl flex-1 px-4 py-12">
+        <main className="mx-auto w-full max-w-4xl flex-1 px-6 py-16">
           {children}
         </main>
         <Footer />

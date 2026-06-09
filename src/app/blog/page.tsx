@@ -7,10 +7,10 @@ export default function BlogPage() {
   )
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-10">
       <div>
-        <h1 className="text-3xl font-bold">Blog</h1>
-        <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+        <h1 className="text-3xl font-bold text-[var(--color-text-primary)]">Blog</h1>
+        <p className="mt-2 text-[var(--color-text-secondary)]">
           Notes, thoughts, and deep dives into frontend development.
         </p>
       </div>

@@ -5,14 +5,14 @@ export default function ProjectsPage() {
   const projects = getAllProjects()
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-10">
       <div>
-        <h1 className="text-3xl font-bold">Projects</h1>
-        <p className="mt-2 text-zinc-600 dark:text-zinc-400">
+        <h1 className="text-3xl font-bold text-[var(--color-text-primary)]">Projects</h1>
+        <p className="mt-2 text-[var(--color-text-secondary)]">
           Things I&apos;ve built, from browser extensions to full-stack applications.
         </p>
       </div>
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-5 sm:grid-cols-2">
         {projects.map((p) => (
           <Card
             key={p.slug}
