@@ -3,7 +3,7 @@ title: "AMap Integration Components"
 description: "Reusable Vue components for Amap (高德地图) integration, featuring file upload with progress tracking and location-based file management."
 tags: [Vue, TypeScript, AMap, Map]
 date: "2026-04-20"
-featured: true
+featured: false
 slug: "amap-components"
 ---
 

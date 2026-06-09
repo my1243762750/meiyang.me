@@ -1,0 +1,59 @@
+{
+  "Header": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "about": "About"
+  },
+  "Footer": {
+    "copyright": "© {year} Meiyang. Built with Next.js and mei-ui-system."
+  },
+  "Home": {
+    "badge": "Frontend Developer",
+    "greeting": "Hi, I'm Meiyang",
+    "description": "A frontend developer passionate about building great web experiences. This is my knowledge base — projects I've built, things I've learned, and ideas I'm exploring.",
+    "viewProjects": "View Projects",
+    "readBlog": "Read Blog",
+    "featuredProjects": "Featured Projects",
+    "viewAll": "View all →"
+  },
+  "About": {
+    "title": "About Me",
+    "p1": "I'm a frontend developer with experience building web applications across multiple domains — from AI tools and real-time chat apps to browser extensions and mapping services.",
+    "p2Start": "I believe that great engineering starts with strong foundations. That's why I developed",
+    "p2Link": "mei-ui-system",
+    "p2End": "— a cross-platform design protocol that ensures visual consistency and engineering rigor across all my projects.",
+    "p3Start": "You can find the core specification and tokens on GitHub:",
+    "skillsTitle": "Skills",
+    "skills": {
+      "jsTs": "JavaScript / TypeScript",
+      "reactNext": "React / Next.js",
+      "vueNuxt": "Vue / Nuxt",
+      "nodeExpress": "Node.js / Express",
+      "cssTailwind": "CSS / Tailwind",
+      "flutterDart": "Flutter / Dart",
+      "webExtensions": "Web Extensions",
+      "gitCicd": "Git / CI/CD",
+      "restWebsocket": "REST / WebSocket"
+    }
+  },
+  "Blog": {
+    "title": "Blog",
+    "subtitle": "Thoughts on frontend development, UI design, and other things I'm learning."
+  },
+  "Projects": {
+    "title": "Projects",
+    "subtitle": "A collection of projects I've worked on, ranging from web apps to browser extensions."
+  },
+  "NotFound": {
+    "title": "404",
+    "message": "Oops! The page you're looking for doesn't exist.",
+    "goHome": "Go back home"
+  },
+  "BlogPost": {
+    "back": "← Back to blog"
+  },
+  "ProjectDetail": {
+    "back": "← Back to projects"
+  }
+}

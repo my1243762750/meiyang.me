@@ -1,31 +1,38 @@
-import Link from "next/link"
+import { getTranslations } from "next-intl/server"
+import { Link } from "@/i18n/navigation"
+import LocaleSwitcher from "./LocaleSwitcher"
 
-const nav = [
-  { href: "/", label: "Home" },
-  { href: "/projects", label: "Projects" },
-  { href: "/blog", label: "Blog" },
-  { href: "/about", label: "About" },
-]
+export default async function Header() {
+  const t = await getTranslations("Header")
 
-export default function Header() {
+  const nav = [
+    { href: "/" as const, label: t("home") },
+    { href: "/projects" as const, label: t("projects") },
+    { href: "/blog" as const, label: t("blog") },
+    { href: "/about" as const, label: t("about") },
+  ]
+
   return (
-    <header className="sticky top-0 z-50 border-b border-[var(--color-border-default)] bg-[var(--color-page)]/80 backdrop-blur-md">
+    <header className="sticky top-0 z-50 border-b border-border-default bg-bg-page/80 backdrop-blur-md">
       <nav className="mx-auto flex max-w-4xl items-center justify-between px-6 py-4">
-        <Link href="/" className="text-lg font-bold tracking-tight text-[var(--color-text-primary)]">
-          meiyang<span className="text-[#6C5CE7]">.me</span>
+        <Link href="/" className="text-lg font-bold tracking-tight text-text-primary">
+          meiyang<span className="text-primary-500">.me</span>
         </Link>
-        <ul className="flex items-center gap-8">
-          {nav.map(({ href, label }) => (
-            <li key={href}>
-              <Link
-                href={href}
-                className="text-sm font-medium text-[var(--color-text-secondary)] transition-colors duration-150 hover:text-[var(--color-text-primary)]"
-              >
-                {label}
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className="flex items-center gap-8">
+          <ul className="flex items-center gap-8">
+            {nav.map(({ href, label }) => (
+              <li key={href}>
+                <Link
+                  href={href}
+                  className="text-sm font-medium text-text-secondary transition-colors duration-150 hover:text-text-primary"
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <LocaleSwitcher />
+        </div>
       </nav>
     </header>
   )

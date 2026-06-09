@@ -1,0 +1,59 @@
+{
+  "Header": {
+    "home": "首页",
+    "projects": "项目",
+    "blog": "博客",
+    "about": "关于"
+  },
+  "Footer": {
+    "copyright": "© {year} Meiyang. 使用 Next.js 和 mei-ui-system 构建。"
+  },
+  "Home": {
+    "badge": "前端开发工程师",
+    "greeting": "你好，我是 Meiyang",
+    "description": "一名热衷于构建优秀 Web 体验的前端开发者。这是我的知识库——包含我构建的项目、学到的东西，以及正在探索的想法。",
+    "viewProjects": "查看项目",
+    "readBlog": "阅读博客",
+    "featuredProjects": "精选项目",
+    "viewAll": "查看全部 →"
+  },
+  "About": {
+    "title": "关于我",
+    "p1": "我是一名前端开发者，在多个领域都有构建 Web 应用的经验——从 AI 工具、实时聊天应用到浏览器扩展和地图服务。",
+    "p2Start": "我相信优秀的工程始于坚实的基础。因此我开发了",
+    "p2Link": "mei-ui-system",
+    "p2End": "——一个跨平台设计协议，确保我所有项目的视觉一致性和工程严谨性。",
+    "p3Start": "你可以在 GitHub 上找到核心规范和 token：",
+    "skillsTitle": "技能",
+    "skills": {
+      "jsTs": "JavaScript / TypeScript",
+      "reactNext": "React / Next.js",
+      "vueNuxt": "Vue / Nuxt",
+      "nodeExpress": "Node.js / Express",
+      "cssTailwind": "CSS / Tailwind",
+      "flutterDart": "Flutter / Dart",
+      "webExtensions": "浏览器扩展",
+      "gitCicd": "Git / CI/CD",
+      "restWebsocket": "REST / WebSocket"
+    }
+  },
+  "Blog": {
+    "title": "博客",
+    "subtitle": "关于前端开发、UI 设计以及我正在学习的其他东西的思考。"
+  },
+  "Projects": {
+    "title": "项目",
+    "subtitle": "我参与的项目合集，涵盖 Web 应用到浏览器扩展。"
+  },
+  "NotFound": {
+    "title": "404",
+    "message": "哎呀！你要找的页面不存在。",
+    "goHome": "返回首页"
+  },
+  "BlogPost": {
+    "back": "← 返回博客"
+  },
+  "ProjectDetail": {
+    "back": "← 返回项目"
+  }
+}

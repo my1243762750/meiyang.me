@@ -1,4 +1,4 @@
-import Link from "next/link"
+import { Link } from "@/i18n/navigation"
 
 interface CardProps {
   href: string
@@ -11,18 +11,18 @@ interface CardProps {
 export default function Card({ href, title, description, tags, date }: CardProps) {
   return (
     <Link href={href} className="group block">
-      <article className="rounded-[var(--radius-lg)] border border-[var(--color-border-default)] bg-[var(--color-elevated)] p-6 shadow-[var(--shadow-sm)] transition-all duration-250 hover:border-[#6C5CE7]/40 hover:shadow-[var(--shadow-md)]">
+      <article className="rounded-lg border border-border-default bg-bg-elevated p-6 shadow-sm transition-all duration-250 hover:border-primary-500/40 hover:shadow-md">
         <div className="mb-2 flex items-start justify-between gap-4">
-          <h3 className="text-lg font-semibold text-[var(--color-text-primary)] transition-colors duration-150 group-hover:text-[#6C5CE7]">
+          <h3 className="text-lg font-semibold text-text-primary transition-colors duration-150 group-hover:text-primary-500">
             {title}
           </h3>
           {date && (
-            <span className="shrink-0 whitespace-nowrap text-sm text-[var(--color-text-tertiary)]">
+            <span className="shrink-0 whitespace-nowrap text-sm text-text-tertiary">
               {date}
             </span>
           )}
         </div>
-        <p className="mb-4 text-sm leading-relaxed text-[var(--color-text-secondary)]">
+        <p className="mb-4 text-sm leading-relaxed text-text-secondary">
           {description}
         </p>
         {tags && tags.length > 0 && (
@@ -30,7 +30,7 @@ export default function Card({ href, title, description, tags, date }: CardProps
             {tags.map((tag) => (
               <span
                 key={tag}
-                className="rounded-[var(--radius-sm)] bg-[var(--color-surface)] px-2.5 py-0.5 text-xs font-medium text-[var(--color-text-tertiary)]"
+                className="rounded-sm bg-bg-surface px-2.5 py-0.5 text-xs font-medium text-text-tertiary"
               >
                 {tag}
               </span>

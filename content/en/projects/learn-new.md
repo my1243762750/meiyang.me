@@ -3,7 +3,7 @@ title: "Note Taking & Knowledge Base"
 description: "A comprehensive collection of frontend interview notes, hands-on implementations, and learning resources covering JavaScript, Vue, CSS, network protocols, and more."
 tags: [Vue, JavaScript, CSS, Webpack, Interview]
 date: "2026-06-01"
-featured: true
+featured: false
 slug: "learn-new"
 ---
 
