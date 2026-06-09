@@ -1,74 +1,42 @@
 @import "tailwindcss";
-
-/* ============================================
-   mei-ui-system Design Tokens
-   Primary: Indigo-Violet (#6C5CE7)
-   ============================================ */
+@import "./tokens.css";
 
 @theme inline {
-  --color-primary-50: #EDE9FE;
-  --color-primary-100: #DDD6FE;
-  --color-primary-200: #C4B5FD;
-  --color-primary-300: #A78BFA;
-  --color-primary-400: #8B5CF6;
-  --color-primary-500: #6C5CE7;
-  --color-primary-600: #5B4ED6;
-  --color-primary-700: #4C3FBF;
-  --color-primary-800: #3D31A8;
-  --color-primary-900: #2E2491;
+  --color-primary-50: var(--color-primary-50);
+  --color-primary-100: var(--color-primary-100);
+  --color-primary-200: var(--color-primary-200);
+  --color-primary-300: var(--color-primary-300);
+  --color-primary-400: var(--color-primary-400);
+  --color-primary-500: var(--color-primary-500);
+  --color-primary-600: var(--color-primary-600);
+  --color-primary-700: var(--color-primary-700);
+  --color-primary-800: var(--color-primary-800);
+  --color-primary-900: var(--color-primary-900);
 
-  --color-blue-50: #EFF6FF;
-  --color-blue-500: #3B82F6;
-  --color-blue-600: #2563EB;
+  --color-surface: var(--color-surface);
+  --color-page: var(--color-page);
+  --color-elevated: var(--color-elevated);
 
-  --color-surface: #F8F9FC;
-  --color-elevated: #FFFFFF;
-  --color-page: #FFFFFF;
+  --color-text-primary: var(--color-text-primary);
+  --color-text-secondary: var(--color-text-secondary);
+  --color-text-tertiary: var(--color-text-tertiary);
 
-  --color-text-primary: #1A1A2E;
-  --color-text-secondary: #5E5F6B;
-  --color-text-tertiary: #A1A3B0;
+  --color-border-default: var(--color-border-default);
+  --color-border-strong: var(--color-border-strong);
 
-  --color-border-default: #E4E5EF;
-  --color-border-strong: #C9CBD6;
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-mono);
 
-  --color-success: #10B981;
-  --color-warning: #F59E0B;
-  --color-error: #EF4444;
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-xl: var(--radius-xl);
+  --radius-2xl: var(--radius-2xl);
 
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", "Cascadia Code", monospace;
-
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 12px;
-  --radius-xl: 16px;
-  --radius-2xl: 24px;
-
-  --shadow-sm: 0 1px 2px 0 rgba(26, 26, 46, 0.06);
-  --shadow-md: 0 2px 6px -1px rgba(26, 26, 46, 0.08);
-  --shadow-lg: 0 4px 12px -2px rgba(26, 26, 46, 0.10);
-  --shadow-xl: 0 8px 24px -4px rgba(26, 26, 46, 0.12);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-page: #0F0F1A;
-    --color-surface: #1A1A2E;
-    --color-elevated: #2A2B38;
-
-    --color-text-primary: #F1F2F7;
-    --color-text-secondary: #A1A3B0;
-    --color-text-tertiary: #5E5F6B;
-
-    --color-border-default: #2A2B38;
-    --color-border-strong: #434452;
-
-    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.30);
-    --shadow-md: 0 2px 6px -1px rgba(0, 0, 0, 0.35);
-    --shadow-lg: 0 4px 12px -2px rgba(0, 0, 0, 0.40);
-    --shadow-xl: 0 8px 24px -4px rgba(0, 0, 0, 0.45);
-  }
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
+  --shadow-xl: var(--shadow-xl);
 }
 
 body {

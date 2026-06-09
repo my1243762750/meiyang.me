@@ -36,6 +36,9 @@ yarn-error.log*
 # vercel
 .vercel
 
+# auto-generated from tokens/*.json
+/src/app/tokens.css
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
